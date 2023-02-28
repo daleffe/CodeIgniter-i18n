@@ -13,14 +13,14 @@ In this, we present the raw text informed if translated text not found.
 - Enable Session
 
 # What it does
-Have the language field in the URL, exapmle:
+Have the language field in the URL, example:
 
 - http://xxx.com/?lang=en-us
 - http://xxx.com/index.php/welcome/index?lang=en-us
 
 # Installation
-- Copy application/config/language.php to your_app/application/config/
-- Copy application/core/MY_Lang.php to your_app/application/core/
+1. Copy *application/config/language.php* to *your_app/application/config/*
+2. Copy *application/core/MY_Lang.php* to *your_app/application/core/*
 
 # Configuration
 Open *application/config/language.php* file:
@@ -42,12 +42,12 @@ The language array lists you can support.
 
 The language class will add prefix value on all language array key automatically.
 
-example:
+Example:
 
     about_lang.php => key: about.xxxx
     api_lang.php => Key: api.xxxx
 
-## Enable language helper at *application\config\autoload.php*:
+### Enable language helper at *application\config\autoload.php*:
 ```php
 $autoload['helper'] = array('language');
 ```
