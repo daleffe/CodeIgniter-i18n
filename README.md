@@ -4,7 +4,8 @@ It is a simple internationalization (i18n) for CodeIgniter 2.2.X
 ```
 What do we do different from the original project?
 
-The original project shows an error if text doesn't contain a translated text. In this, we present the raw text informed if translated text not found.
+The original project shows an error if text doesn't contain a translated text. 
+In this, we present the raw text informed if translated text not found.
 ```
 
 ## Requirements
@@ -54,10 +55,10 @@ $autoload['helper'] = array('language');
 # How to use
 Create a language file at *application/language/english/about_lang.php*:
 ```php
-    <?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed');
-    $lang['home'] = "Home";
-    $lang['introduction'] = "Introduction";
-    $lang['location'] = "Location";
+<?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+$lang['home'] = "Home";
+$lang['introduction'] = "Introduction";
+$lang['location'] = "Location";
 ```
 ## Controller
 Load language file at constructor:
@@ -74,15 +75,15 @@ class About extends CI_Controller {
 
 At view:
 ```php
-    <?php
-    // Language_helper needed (deprecated)
-    echo lang('about.home');
-    echo lang('about.introduction');
-    echo lang('about.location');
-    echo lang('Text not translated');
+<?php
+// Language_helper needed (deprecated)
+echo lang('about.home');
+echo lang('about.introduction');
+echo lang('about.location');
+echo lang('Text not translated');
 
-    echo $this->lang->line('about.home');    
-    echo $this->lang->line('about.introduction');    
-    echo $this->lang->line('about.location');    
-    echo $this->lang->line('Text not translated');
+echo $this->lang->line('about.home');    
+echo $this->lang->line('about.introduction');    
+echo $this->lang->line('about.location');    
+echo $this->lang->line('Text not translated');
 ```
