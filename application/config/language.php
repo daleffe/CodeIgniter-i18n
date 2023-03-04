@@ -1,4 +1,4 @@
-<?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+<?php defined('BASEPATH') OR exit('No direct script access allowed');
 /*
  * default language field form $_POST or $_GET or $_SESSION
  */
@@ -12,5 +12,5 @@ $config['language_key'] = 'en-us';
  */
 $config['language_list'] = array(
     'en-us' => 'english',
-    'zh-tw' => 'zh-tw'
+    'pt-br' => 'portuguese-brazilian'
 );
